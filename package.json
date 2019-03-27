@@ -1,0 +1,33 @@
+{
+    "name": "mani-language",
+    "displayName": "Mani",
+    "description": "Mani language syntax support for Visual Studio Code.",
+    "repository": "https://github.com/crazywolf132/Mani-vscode.git",
+    "version": "0.0.4",
+    "publisher": "Brayden Moon",
+    "icon": "mani.png",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mani",
+            "aliases": ["Mani", "mani"],
+            "extensions": [".mn"],
+            "configuration": "./mani.configuration.json"
+        }],
+        "grammars": [{
+            "language": "mani",
+            "scopeName": "source.mani",
+            "path": "./syntaxes/mani.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "mani",
+            "path": "./snippets/mani.json"
+        }]
+    }
+}
