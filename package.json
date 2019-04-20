@@ -17,7 +17,7 @@
         "languages": [{
             "id": "mani",
             "aliases": ["Mani", "mani"],
-            "extensions": [".mn"],
+            "extensions": [".mni"],
             "configuration": "./mani.configuration.json"
         }],
         "grammars": [{
