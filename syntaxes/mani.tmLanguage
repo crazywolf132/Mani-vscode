@@ -63,6 +63,42 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.mani</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\\\(</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>string-interpolation</string>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.mani</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\+</string>
+							<key>name</key>
+							<string>keyword.operator.mani</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(for|if|private|internal|this|else|return|class|super|while|let|load|#|say|fn|true|false|nil)\b</string>
 			<key>name</key>
