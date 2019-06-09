@@ -14,7 +14,7 @@
         "prefix": "load",
         "description": "Imports a file, or API.",
         "body": [
-            "load \"$1\""
+            "load \"$1\";"
         ]
     },
 
@@ -32,9 +32,29 @@
       "prefix": "for",
       "description": "Insert a for loop.",
       "body": [
-        "for (var ${1:name} in ${2:list}) {",
-        "  $3",
+        "for (let i = 0; i < ${1:amount}; i++) {",
+        "  $2",
         "}"
+      ]
+    },
+
+    "foreach": {
+      "prefix": "foreach",
+      "description": "Regular foreach loop.",
+      "body": [
+          "for (${1:name} : ${2:list}) {",
+          " $3",
+          "}"
+      ]
+    },
+
+    "foreachMap": {
+      "prefix": "foreachMap",
+      "description": "Map foreach loop.",
+      "body": [
+          "for (${1:key}, ${2:val} : ${3:map}) {",
+          " $3",
+          "}"
       ]
     },
 
@@ -64,6 +84,16 @@
       "body": [
         "class ${1:Name} {",
         "  $2",
+        "}"
+      ]
+    },
+
+    "internal": {
+      "prefix": "internal",
+      "desciption" : "Used as a private method.",
+      "body": [
+        "internal ${1 : Name}() {",
+        " $2",
         "}"
       ]
     },
