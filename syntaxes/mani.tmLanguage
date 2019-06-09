@@ -100,7 +100,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(for|if|private|internal|this|else|return|class|super|while|let|load|#|say|fn|true|false|nil)\b</string>
+			<string>\b(for|if|private|internal|as|is|this|else|return|class|super|while|let|load|#|say|fn|true|false|nil)\b</string>
 			<key>name</key>
 			<string>keyword.reserved.mani</string>
 		</dict>
