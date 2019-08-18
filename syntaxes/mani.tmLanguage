@@ -106,7 +106,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|return|else|case|break|for|while|switch|continue)\b</string>
+			<string>\b(if|return|else|case|break|for|while|switch|continue|default)\b</string>
 			<key>name</key>
 			<string>keyword.control.flow-control.mani</string>
 		</dict>
